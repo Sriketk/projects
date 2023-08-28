@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table th {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table td {
+            background-color: #555;
+            color: #fff;
+            padding: 10px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ff9800;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        select {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            width: 200px;
+            font-size: 16px;
+        }
+
+        input[type="number"] {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            width: 100px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #ff9800;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #ff9800;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #ff9800;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ffac33;
+        }
+
+        button:active {
+            background-color: #e69500;
+        }
+
+
+        .pushable:focus:not(:focus-visible) {
+            outline: none;
+        }
+    </style>
+</head>
+<body><center>
+    <h1>Tickets</h1>
+    <center><table border = '2'>
+        <tr><th>Movie Ticket</th><th>Cost</th></tr>
+        <tr><td>Blow Out</td><td>7</td></tr>
+        <tr><td>BoyHood</td><td>6</td></tr>
+        <tr><td>Enemy</td><td>5</td></tr>
+        <tr><td>Interstellar IMAX</td><td>10</td></tr>
+        <tr><td>Interstellar Regular<td>7</td></tr>
+        <tr><td>Requiem for a dream</td><td>6</td></tr>
+        <tr><td>Mommy</td><td>5</td></tr>
+    </table> </center><br> 
+    <form action="http://localhost:4829/ticketsconfirm" method = "post">
+        <fieldset>
+            Name of Reservation: <input type="text" name = "name" placeholder="John Doe" required><br><br>
+            <label for="movie1">Select Movie:</label>
+            <select name="movie1" id="movie1">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="Blow Out">Blow Out</option>
+                <option value="BoyHood">BoyHood</option>
+                <option value="Enemy" >Enemy</option>
+                <option value="Interstellar IMAX">Interstellar IMAX</option>
+                <option value="Interstellar Regular" >InterStellar Regular</option>
+                <option value="Requiem For A Dream" >Requiem For a Dream</option>
+                <option value="Mommy" >Mommy</option>
+            </select> &nbsp;
+            # Tickets <input type="number" max="9" min="0" name = "ticket1" value = "0"> <br>
+
+            <label for="movie2">Select Movie:</label>
+            <select name="movie2" id="movie2">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="Blow Out">Blow Out</option>
+                <option value="BoyHood">BoyHood</option>
+                <option value="Enemy" >Enemy</option>
+                <option value="Interstellar IMAX">Interstellar IMAX</option>
+                <option value="Interstellar Regular" >InterStellar Regular</option>
+                <option value="Requiem For A Dream" >Requiem For a Dream</option>
+                <option value="Mommy" >Mommy</option>
+            </select> &nbsp;
+            # Tickets <input type="number" max="9" min="0" name = "ticket2" value = "0"> <br>
+
+            <label for="movie3">Select Movie:</label>
+            <select name="movie3" id="movie3">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="Blow Out">Blow Out</option>
+                <option value="BoyHood">BoyHood</option>
+                <option value="Enemy" >Enemy</option>
+                <option value="Interstellar IMAX">Interstellar IMAX</option>
+                <option value="Interstellar Regular" >InterStellar Regular</option>
+                <option value="Requiem For A Dream" >Requiem For a Dream</option>
+                <option value="Mommy" >Mommy</option>
+            </select> &nbsp;
+            # Tickets <input type="number" max="9" min="0" name = "ticket3" value = "0"> <br>
+
+            <label for="movie4">Select Movie:</label>
+            <select name="movie4" id="movie4">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="Blow Out">Blow Out</option>
+                <option value="BoyHood">BoyHood</option>
+                <option value="Enemy" >Enemy</option>
+                <option value="Interstellar IMAX">Interstellar IMAX</option>
+                <option value="Interstellar Regular" >InterStellar Regular</option>
+                <option value="Requiem For A Dream" >Requiem For a Dream</option>
+                <option value="Mommy" >Mommy</option>
+            </select> &nbsp;
+            # Tickets <input type="number" max="9" min="0" name = "ticket4" value = "0"> <br>
+
+            <label for="movie5">Select Movie:</label>
+            <select name="movie5" id="movie5">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="Blow Out">Blow Out</option>
+                <option value="BoyHood">BoyHood</option>
+                <option value="Enemy" >Enemy</option>
+                <option value="Interstellar IMAX">Interstellar IMAX</option>
+                <option value="Interstellar Regular" >InterStellar Regular</option>
+                <option value="Requiem For A Dream" >Requiem For a Dream</option>
+                <option value="Mommy" >Mommy</option>
+            </select> &nbsp;
+            # Tickets <input type="number" max="9" min="0" name = "ticket5" value = "0"> <br>
+
+            <label for="movie6">Select Movie:</label>
+            <select name="movie6" id="movie6">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="Blow Out">Blow Out</option>
+                <option value="BoyHood">BoyHood</option>
+                <option value="Enemy" >Enemy</option>
+                <option value="Interstellar IMAX">Interstellar IMAX</option>
+                <option value="Interstellar Regular" >InterStellar Regular</option>
+                <option value="Requiem For A Dream" >Requiem For a Dream</option>
+                <option value="Mommy" >Mommy</option>
+            </select> &nbsp;
+            # Tickets <input type="number" max="9" min="0" name = "ticket6" value = "0"> <br>
+        </fieldset><br>
+        <input type="submit" value="Order Tickets"/>
+    </form>
+    <a href="/">Home</a>
+</center></body>
+</html>

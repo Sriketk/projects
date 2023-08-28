@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Theater</title>
+    <style>
+    /* The blue link color didnt work so I changed it to white 
+    so its more visible, change it if you don't like it */
+
+        a {
+            color: #fff;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ff9800;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+
+        table th {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table td {
+            background-color: #555;
+            color: #fff;
+            padding: 10px;
+        }
+
+        button {
+            background-color: #ff9800;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ffac33;
+        }
+
+        button:active {
+            background-color: #e69500;
+        }
+
+
+        .pushable:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        .slideshow-container {
+            max-width: 400px;
+            position: relative;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        .slideshow-container img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body><center>
+    <h1><center>Welcome to the UMD Movie Theater!</center></h1>
+    <h2><center>Here is whats playing today!</center></h2><br>
+    <center><table border = '2'>
+        <tr><th>Movie</th></tr>
+        <tr><td><a href="/Interstellar" >InterStellar</a></td></tr>
+        <tr><td><a href="/Blowout" >Blow Out</a></td></tr>
+        <tr><td><a href="/Requiem" >Requiem for a Dream</a></td></tr>
+        <tr><td><a href="/BoyHood" >BoyHood</a></td></tr>
+        <tr><td><a href="/Enemy" >Enemy</a></td></tr>
+        <tr><td><a href="/Mommy" >Mommy</a></td></tr>
+    </table> </center><br>
+    <form action = "snacks">
+        <button>Click here to buy Snacks</button><br>
+    </form> <br>
+    <form action = "tickets">
+        <button>Click here to buy Tickets</button><br>
+    </form> <br>
+    <form action = "review">
+        <button>Click here to review your ticket purchase</button><br>
+    </form>
+
+    <fieldset>
+        <legend>UPCOMING MOVIES</legend>
+        <div class="slideshow-container">
+            <img src="" id="slideshowImage">
+    
+            <script>
+                const images = []; // Images Array
+                const time = 3000; // Time Between Switch
+    
+                // Image List from the movie API
+                fetch('https://api.themoviedb.org/3/movie/popular?api_key=7d9a549020b65672a72b3682c322b1ce')
+                    .then(response => response.json())
+                    .then(data => {
+                        const movies = data.results;
+                        movies.forEach(movie => {
+                            images.push('https://image.tmdb.org/t/p/w500' + movie.poster_path);
+                        });
+    
+                        // Change Image
+                        let i = 0; // Start Point
+                        const slideshowImage = document.getElementById('slideshowImage');
+    
+                        function changeImg() {
+                            slideshowImage.src = images[i];
+    
+                            // Check If Index Is Under Max
+                            if (i < images.length - 1) {
+                                // Add 1 to Index
+                                i++;
+                            } else {
+                                // Reset Back To 0
+                                i = 0;
+                            }
+    
+                            // Run function every x seconds
+                            setTimeout(changeImg, time);
+                        }
+    
+                        // Run function when page loads
+                        changeImg();
+                    })
+                    .catch(error => console.log(error));
+            </script>
+        </div>
+    </fieldset>
+
+</center></body>
+</html>

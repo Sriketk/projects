@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table th {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table td {
+            background-color: #555;
+            color: #fff;
+            padding: 10px;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #ff9800;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body><center>
+    <h1>Ticket Review</h1>
+    Enter the name the ticket was purchased under:
+    <form action = "http://localhost:4829/reviewpost" method = "post">
+    <input type ="text" name = "name">
+    <input type ="submit">
+    </form>
+    <a href="/">Home</a>
+</center></body>
+</html>
