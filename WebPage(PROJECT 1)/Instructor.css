@@ -1,0 +1,28 @@
+html{
+    font-size: 16px;
+}
+body{
+
+    font-family: serif; /* Try cursive */
+    background-color: silver;
+    background-image: url(UMDGlobe.gif);
+    background-size: 20% 30%; /* Try cover, auto auto */
+    background-repeat: repeat; /* Try repeat-y, no-repeat, repeat */
+    background-attachment: fixed; /* Try scroll */
+    background-position: center;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    align-self: center;
+    margin-left:25rem ;
+}
+
+table, td, th {
+	border: .09rem solid black;
+	height: 1.5rem;
+    background-color: blueviolet;
+}
+caption{
+    color: green;
+}

@@ -1,0 +1,85 @@
+/* Do not remove this rule */
+
+html {
+    font-size:14px;
+	background-color:antiquewhite;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.double-border{
+	border-style: double;
+	border-color:brown;
+	border-width: 1rem;
+	margin:1rem auto;
+	margin-left: 1rem;
+	margin-right:1rem;
+}
+
+
+.blue-border{
+	margin:1rem auto;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	background-color: white;
+	border-width: 1.5rem;
+	border-style: ridge;
+	border-color:blue;
+}
+
+.main{
+	margin:4rem auto;
+	margin-left: 4rem;
+	margin-right:4rem;
+}
+#heading{
+	display:flex;	
+}
+
+#pic1{
+	margin-bottom: .5rem;
+	height: 7rem;
+}
+
+#pic2{
+	height:8rem;
+	width: 40rem;
+	margin-bottom:.7c rem;
+}
+
+.p1{
+	color: brown;
+}
+.CP{
+	font-weight: bold;
+}
+caption{
+	color: blue;
+}
+
+#intro > .p1::first-letter {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+#intro > .p1:hover{
+	color: red;
+}
+
+#intro > .p1{
+	width: 42rem;
+}
+
+
+table, td, th {
+	border: .09rem solid black;
+	height: 1.5rem;
+}
+
+thead{
+	background-color: antiquewhite;
+	color: brown
+}
+
+#letters{
+	list-style-type: upper-alpha;
+}
