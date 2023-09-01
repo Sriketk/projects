@@ -1,0 +1,156 @@
+html {
+    font-size:14px;
+	background-color:white;
+	font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-image:url("images/JimHenson.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.green-border{
+    border-style: solid;
+    border-color: green;
+    border-width: 1rem;
+    height: 52rem;
+    
+}
+h1{
+    color: azure;
+    font-size: 400%;
+    background-color: rgba(0, 0, 0, .4);
+    background-size: 1rem;
+}
+
+p{
+    border-style: solid;
+    background-color: rgb(211,211,211, 0.8);
+    position: relative;
+    width: 15rem;
+    font-size: 2rem;
+    top:15rem;
+    left: 40rem;
+    padding-left: 5rem;
+    padding-right: 4rem;
+    
+}
+.mid-labels{
+    color: brown;
+}
+
+.mid-labels:hover{
+    font-size: 1.75rem;
+}
+#first:visited{
+    color:beige
+}
+#second:visited{
+    color: beige;
+}
+
+.blue{
+    position: sticky;
+    border-style: solid;
+    border-width: .5rem;
+    top:47rem;
+    border-color: rgb(168, 207, 236);
+    height:5rem;
+}
+.footer{
+    font-size: 2rem;
+    border-style: ridge;
+    border-color: darkgrey;
+    border-width: .75rem;
+    background-color: red;
+    height:3.5rem; 
+
+}
+div > footer{
+    position:relative;
+    padding-left: 25rem;
+    left:6rem;
+    top: .6rem;
+    font-style: italic;
+}
+
+div > footer:hover{
+    font-size: 1.75rem;
+}
+
+a{
+    color:white;
+}
+
+/*    STYLE FOR  CATALOG-INQUIRY */
+
+form {
+    position:relative;
+    border-style: solid;
+    border-color: azure;
+    border-width:.5rem;
+    background-color: rgb(255, 255, 255, 0.85);
+    width: 44rem;
+    font-size: 2rem;
+    left:5rem;
+    top: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#item-cat{
+    border-color: brown;
+    width:10rem;
+    height:1.5rem;
+}
+#maxcost{
+    border-color: red;
+    height:1.5rem;
+    width:6rem;
+}
+
+input[type = checkbox]{
+    border-color: green;
+    width:1.5rem;
+    height:1.5rem;
+}
+
+#textbox{
+    width: 39rem;
+    height:8rem;
+    text-align:start;
+}
+
+.mail{
+    width: 15rem;
+    height:1.4rem;
+    border-color: red;
+}
+
+.button{
+    
+    width: 10rem;
+    height: 3rem;
+    border-style: double groove;
+    border-radius: .5rem;
+    border-width: .3rem;
+}
+
+
+/* THE FOLLOWING CSS IS FOR PLACING ORDER */
+#serial{
+    border-color: brown;
+    border-style: solid;
+    height: 1.5rem;
+}
+.credit{
+    height:1.5rem;
+    width: 3rem;
+    border-color: red;
+    border-width: .2rem;
+    border-style: solid;
+}
+
+#addy{
+    border-color: red;
+    border-style:solid;
+}

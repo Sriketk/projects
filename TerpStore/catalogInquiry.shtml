@@ -1,0 +1,51 @@
+<!-- You implement -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Catalog Inquiry</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet"  href="style.css" >
+</head>
+
+<body>
+    <div class = "green-border">
+        <h1><u>Catalog Inquiry</u></h1>
+        <form action = "http://npp.cs.umd.edu/cmsc335/projects/TerpStore/catalogInquiry.php" method="get">
+            <u>Item Category</u> 
+            <input id ="item-cat" list="dropdown" name = "item-choice" autofocus required>
+            <datalist id="dropdown">
+                <option value="clothes">
+                <option value="books">
+                <option value="music">
+                <option value="food">
+                <option value="other">
+            </datalist><br><br>
+
+            <u>Maximum Cost($)</u>
+            <input id="maxcost" type="number" min="1" max="1000" step="5" value="1" name = "maximumCost">
+            <br><br>
+
+            <label>
+                <input id = "AOC" type ="checkbox" name = "availableOnCampus">
+            </label>
+            <u>Available on Campus</u><br>
+
+            <input id = "AO" type ="checkbox" name = "availableOnline" checked><u>Available Online</u><br>
+            
+            <u>Additional Information</u><br>
+            <input id = "textbox" type="text" name = "info"><br>
+
+            <u>Contact Email Address:</u>
+            <input class  = "mail" type="text" name = "email" placeholder="example@terpmail.umd.edu"><br><br>
+            <input class = "button" type="submit" value = "Submit Inquiry">
+            <input class  = "button" type="reset" value = "Clear"><br><br>
+
+        </form>
+        <div class = "blue">
+            <div class = "footer">
+                <!--#include virtual="footer.shtml"-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

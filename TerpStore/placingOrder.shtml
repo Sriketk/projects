@@ -1,0 +1,35 @@
+<!-- You implement -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Placing Order</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet"  href="style.css" >
+</head>
+<body>
+    <div class = "green-border">
+        <h1><u>Placing Order</u></h1>
+        <form action = "processing/placingOrder.php" method="post">
+            <u>Item Serial #</u>
+            <input id  = "serial" type="text" name = "serialNumber" placeholder="umd-item-0000" autofocus required><br><br>
+            <u> Credit Card #</u>
+            <input class = "credit" type="text" name = "cc1" maxlength="4"> - 
+            <input class = "credit" type="text" name = "cc2" maxlength="4"> - 
+            <input class = "credit" type="text" name = "cc3" maxlength="4"> - 
+            <input class = "credit" type="text" name = "cc4" maxlength="4">  <br><br>
+
+            <u> Shipping Address</u>
+            <input id = "addy" type = "text" maxlength="80" name = "shipping"><br><br>
+            <u>Contact Email Address:</u>
+            <input class  = "mail" type="text" name = "email" placeholder="example@terpmail.umd.edu"><br><br>
+            <input class = "button" type="submit" value = "Submit Order">
+            <input class  = "button" type="reset" value = "Clear"><br><br>
+
+        </form>
+        <div class = "blue">
+            <div class = "footer">
+                <!--#include virtual="footer.shtml"-->
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Terp Store</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet"  href="style.css" >
+</head>
+
+<body>
+    <div class = "green-border">
+        <h1><u>Terp Store</u></h1>
+        <p>
+            <a id = "first" class = "mid-labels" href="catalogInquiry.shtml">Catalog Inquiry</a>
+            <a id = "second" class = "mid-labels" href="placingOrder.shtml">Placing Order</a>
+        </p>
+        <div class = "blue">
+            <div class = "footer">
+                <!--#include virtual="footer.shtml"-->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
